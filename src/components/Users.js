@@ -3,7 +3,7 @@ import {connect} from 'react-redux'
 class Users extends Component {
 
   render() {
-    let users = this.props.users.map((user, index) => <li key={index}>{}user.username</li>)
+    let users = this.props.users.map((user, index) => <li key={index}>{user.username}</li>);
     return (
       <div>
         <ul>
@@ -25,4 +25,4 @@ const mapStateToProps=(state)=>{
 }
 
 // connect this component to Redux
-export default connect(mapStateToProps)(users)
+export default connect (mapStateToProps)(Users);
